@@ -1,13 +1,13 @@
-public class sumas {
+public class restas {
 
-    private int sumatotal=0;
+    private int restatotal=0;
 
-    public  int suma(int n1, int n2){
+    public  int resta(int n1, int n2){
         return n1-n2;
     }
 
-    public int sumaAcumulada(int n){
-        sumatotal-=n;
+    public int restaAcumulada(int n){
+        restatotal-=n;
         return sumatotal;
     }
 
