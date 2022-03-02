@@ -9,7 +9,7 @@ public class Main {
 
         //Suma acumulada
         System.out.println(ejemplo.sumaAcumulada(1));
-        System.out.println(ejemplo.sumaAcumulada(3));
+        System.out.println(ejemplo.sumaAcumulada(25));
         System.out.println(ejemplo.sumaAcumulada(5));
         System.out.println(ejemplo.sumaAcumulada(2));
 
