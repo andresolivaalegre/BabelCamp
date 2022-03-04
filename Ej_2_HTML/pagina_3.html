@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tablas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="procesarPeticion.jsp" method="get">
+        <fieldset><legend>Encuesta</legend>
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" name="nombre"/>
+            <br />
+            <label for="edad">Edad: </label>
+            <input id="edad" type="text" name="edad" />
+            <br/>
+            <input id="identificador" type="hidden" name="identificador" value="123"/>
+            <br/>
+            <label for="Piloto preferido">Piloto preferido: </label>
+            <br />	
+            <input type="radio" name="Rayo" value="S" />Rayo<br />	
+            <input type="radio" name="El rey" value="C" />El rey<br />	
+            <input type="radio" name="Marc Marquez" value="V" />Marc Marquez<br />	
+
+            
+            <br/>
+            <label for="Piloto mas odiado">Piloto mas odiado: </label>
+            <br />	
+            <input type="checkbox" name="Hudson" value="M" checked/>Hudson<br />	
+            <input type="checkbox" name="Dovizioso" value="L" checked/>Dovizioso<br />	
+            <input type="checkbox" name="Alonso" value="D" />Alonso<br />	
+            <br/>
+            
+            
+           
+    </form>
+</body>
+
+    
+</html>
