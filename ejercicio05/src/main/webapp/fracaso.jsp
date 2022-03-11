@@ -4,10 +4,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Incorrecto</title>
+<link rel="stylesheet" href="formulario.css">
 </head>
 <body>
-<h1>>USUARIO O CONTRASEÑA INCORRECTOS</h1>
-<h1>${u1}</h1> 
+
+<div id="contenedor">
+<h3>USUARIO O CONTRASEÑA INCORRECTOS</h3>
+</div>
 </body>
+
 </html>

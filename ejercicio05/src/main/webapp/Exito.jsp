@@ -4,11 +4,17 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Bienvenido</title>
+<link rel="stylesheet" href="formulario.css">
 </head>
+
 <body>
 
-	<h1>${u1}</h1> 
+<div id="contenedor">
+	<h4>¡Bienvenido de nuevo, ${u1}!</h4> 
+	<h1>Accede a tu contenido:</h1>
+	<a href="presentacion.html">Pulse aquí</a>
+</div>
 
 </body>
 </html>

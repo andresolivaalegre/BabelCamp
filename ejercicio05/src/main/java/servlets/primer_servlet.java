@@ -24,15 +24,15 @@ public class primer_servlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		Usuario u1 = new Usuario();
-		u1.setNombre("usuario1");
+		u1.setNombre("Felix");
 		u1.setContrasenia("1234");
 		
 		Usuario u2 = new Usuario();
-		u2.setNombre("usuario2");
+		u2.setNombre("Juan");
 		u2.setContrasenia("12345");
 		
 		Usuario u3 = new Usuario();
-		u3.setNombre("usuario3");
+		u3.setNombre("Luis");
 		u3.setContrasenia("123456");
 		
 		ArrayList<Usuario> usuarios =new ArrayList<Usuario>();
