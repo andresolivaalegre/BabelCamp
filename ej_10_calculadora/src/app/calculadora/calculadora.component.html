@@ -1,0 +1,36 @@
+
+
+<body>
+	<div class="padre">
+		<div class="hijo">
+<h1>Calculadora:</h1>
+
+
+Introduce un número: <input id="num1" [(ngModel)]="n1"/>
+
+
+<br>
+<br>
+
+Introduce un número: <input id="num2" [(ngModel)]="n2"/>
+
+
+<br>
+<br>
+
+Selecciona operación:
+
+	<button (click)="suma()"  >+</button>
+    <button (click)="resta()" >-</button>
+    <button (click)="multiplicacion()" >*</button>
+    <button (click)="division()">/</button>
+
+
+<br>
+<br>
+
+Resultado: <td>{{ resultado }}</td>
+</div>
+</div>
+
+</body>

@@ -1,0 +1,61 @@
+
+
+<div id="form">
+    <h1>FORMULARIO</h1>
+<div> 
+    <button (click)="insertar()">Insertar</button>
+    <button (click)="vaciar()">Vaciar</button>
+</div>
+
+<br/>
+
+<div> 
+    <label for="idJuego">ID</label>
+    <div>
+        <input id="id" [(ngModel)]="id"/>
+    </div>  
+
+    <label for="titulo">Titulo</label>
+    <div>
+        <input id="titulo" [(ngModel)]="titulo"/>
+    </div>    
+
+    <label for="compania">Compania</label>
+    <div>
+        <input id="compania" [(ngModel)]="compania"/>
+    </div>
+
+    <label for="valoracion">Valoracion</label>
+    <div>
+        <input id="valoracion" [(ngModel)]="valoracion"/>
+    </div>
+    
+</div>
+</div>    
+<br/>
+
+
+<table id=mostrar>    
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Universo</th>
+            <th>Valoracion</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr *ngFor="let h of listaJuegos">
+            <td>{{ h.id }}</td>
+            <td>{{ h.titulo }}</td>
+            <td>{{ h.compania }}</td>
+            <td>{{ h.valoracion }}</td>
+        </tr>
+        <tr *ngIf="listaJuegos.length==0">
+            <td >
+                No se han encontrado juegos
+            </td>
+        </tr>
+    </tbody>
+</table> 

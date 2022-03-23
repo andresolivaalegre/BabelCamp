@@ -1,0 +1,12 @@
+.padre {
+    background: rgb(77, 77, 1);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hijo {
+    background: rgb(159, 194, 2);
+    
+  }
