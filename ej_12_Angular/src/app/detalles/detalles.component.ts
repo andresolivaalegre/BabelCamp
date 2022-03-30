@@ -37,7 +37,7 @@ export class DetallesComponent {
   }
 
   public sobreNosotros(){
-    this.router.navigate(["https://www.juegos.com/"])
+    this.router.navigate(["/nosotros", this.userEmail])
   }
 
   public contacto(){

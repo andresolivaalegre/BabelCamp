@@ -43,4 +43,13 @@ export class MainComponent {
     this.router.navigate(["/detalles",game.getId(),game.getTitulo(),game.getCompania(),game.getValoracionMedia(),game.getUrlImg(),this.mail])
   }
   
+  public sobreNosotros(){
+    this.router.navigate(["/nosotros", this.mail])
+  }
+
+  public contacto(){
+    this.router.navigate(["/contacto",this.mail])
+  }
+
+
 }
