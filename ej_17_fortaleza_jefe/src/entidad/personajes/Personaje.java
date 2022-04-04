@@ -9,5 +9,7 @@ public abstract class Personaje {
 	public abstract int atacar();
 	public abstract void cogerArma(Arma arma);
 	public abstract String toString();
+	public abstract int getVida();
+	public abstract void setVida(int i);
 	
 }

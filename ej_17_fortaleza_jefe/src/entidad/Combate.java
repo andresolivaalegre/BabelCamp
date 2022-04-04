@@ -1,22 +1,54 @@
 package entidad;
 
+import entidad.armas.Arco;
+import entidad.armas.Arma;
 import entidad.armas.Espada;
 import entidad.armas.Hechizo;
+import entidad.armas.PaloCelestial;
+import entidad.armas.Puños;
+import entidad.armas.Rezos;
 import entidad.personajes.Curandero;
 import entidad.personajes.Guerrero;
+import entidad.personajes.Jefe;
 import entidad.personajes.Mago;
 import entidad.personajes.Personaje;
 
 public class Combate {
-
-	Personaje p1 = new Guerrero("Cid");
-	Personaje p2 = new Mago("Pop");
-	Hechizo h = new Hechizo();
-	Espada e = new Espada();
 	
-	public void combatir() {
-		p1.cogerArma(e);
-		p2.cogerArma(h);
+	public Combate(Personaje j) {
+		this.p1=j;
+	}
+
+	Personaje p1;
+	Personaje p2;
+	PaloCelestial p = new PaloCelestial();
+	Arma a;
+	
+	
+	
+	public boolean combatir() {
+		int n= (int) (Math.random() * (3 - 1) + 1);
+		if(n==1)
+			p2= new Guerrero("Aspirante Guerrero");
+		else if (n==2)
+			p2= new Mago("Aspirante Mago");
+		else 
+			p2= new Curandero("Aspirante Curandero");
+
+		n= (int) (Math.random() * (5 - 1) + 1);
+		if(n==1)
+			a = new Espada();
+		else if (n==2)
+			a= new Hechizo();
+		else if (n==3)
+			a= new Arco();
+		else if (n==4)
+			a= new Rezos();
+		else 
+			a= new Puños();
+
+		p1.cogerArma(p);
+		p2.cogerArma(a);
 		
     
 	 System.out.println("DAMAAAAAAAS Y CABALLEROOOOOS, COMIENZA EL COMBATE DEL SIGLO");
@@ -44,9 +76,13 @@ public class Combate {
 	 else {System.out.println(p2.getNombre() + " esta muerto");
 	 	   System.out.println(p1.getNombre() + "(sangrando): Ni me has tocado");}
 	 
-	    System.out.println("_________________________________________________________________");
+	    System.out.println("_________________________________________________________________________________________________________________");
 	    System.out.println("Ha sido un combate muy disputado entre " + p1.getNombre()+ " y "+ p2.getNombre());
 	    System.out.println("FIN DE LA RETRANSMISION");
+	    if(p1.estaMuerto())
+	    	return true;
+	    else
+	    	return false;
 	    
 		 
 		

@@ -12,7 +12,7 @@ public class Curandero extends Personaje {
 		this.nombre=nombre;
 		this.arma= new Puños();
 		this.vida=1000;
-		this.sabiduria=70;
+		this.sabiduria=150;
 	}
 	
 	@Override
