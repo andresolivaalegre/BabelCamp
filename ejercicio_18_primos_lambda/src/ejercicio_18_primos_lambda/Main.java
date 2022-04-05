@@ -7,10 +7,6 @@ interface esPrimo{
 }
 
 
-//Crear un thread de un objeto que sea runnable
-//Hacer .start
-//Hacer funcion lambda que recoja la informacion por consola
-
 public class Main {
 	
 	
