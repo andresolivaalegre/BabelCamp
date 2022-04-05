@@ -20,7 +20,7 @@ public class Fortaleza extends Thread{
 	
 	
 	public void entrar(Personaje jefe) {
-		this.jefe.setVida(3500);
+		this.jefe.setVida(2700);
 		Combate c = new Combate(jefe);
 		c.combatir();
 	}

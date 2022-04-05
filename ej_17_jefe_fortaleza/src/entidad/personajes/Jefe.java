@@ -11,8 +11,8 @@ public class Jefe extends Personaje{
 	public Jefe(String nombre) {
 		this.nombre=nombre;
 		this.arma= new PaloCelestial();
-		this.vida=3500;
-		this.fuerza=(int) (Math.random() * (60 - 40) + 50);
+		this.vida=2700;
+		this.fuerza=(int) (Math.random() * (20 - 10) + 10);
 
 	}
 	
@@ -37,7 +37,7 @@ public class Jefe extends Personaje{
 	public int calcularDanio() {
 		if(estaMuerto())
 			return 0;
-		if(this.arma instanceof Arco || this.arma instanceof Espada)
+		if(this.arma instanceof PaloCelestial)
 			return arma.getDanio()+fuerza;
 		return arma.getDanio();
 	}
