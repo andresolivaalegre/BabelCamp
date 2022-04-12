@@ -3,6 +3,9 @@ package coche.modelo.negocio;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
+
+import controlador.ControladorCoches;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -25,7 +28,7 @@ public class GestorCochesTest {
 		cocheEsperado.setMarca("Seat");
 		cocheEsperado.setMatricula("4736FTY");
 		cocheEsperado.setModelo("Cordoba");
-		assertEquals(cocheEsperado, Main.buscarId(id));
+		assertEquals(cocheEsperado, ControladorCoches.buscarId(id));
 		
 		//Meto id negativo
 		id=-15;
@@ -36,7 +39,7 @@ public class GestorCochesTest {
 		cocheEsperado.setMarca("");
 		cocheEsperado.setMatricula("");
 		cocheEsperado.setModelo("");
-		assertEquals(cocheEsperado, Main.buscarId(id));
+		assertEquals(cocheEsperado, ControladorCoches.buscarId(id));
 		
 		//Meto id valido y no existe
 		
@@ -48,7 +51,7 @@ public class GestorCochesTest {
 		cocheEsperado.setMarca("");
 		cocheEsperado.setMatricula("");
 		cocheEsperado.setModelo("");
-		assertEquals(cocheEsperado, Main.buscarId(id));
+		assertEquals(cocheEsperado, ControladorCoches.buscarId(id));
 		
 		
 	}
