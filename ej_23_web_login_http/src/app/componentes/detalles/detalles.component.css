@@ -1,0 +1,82 @@
+#divLogin{
+    
+    background-color:rgb(194, 235, 196);
+    padding-top: 80px;
+    padding-bottom: 220px;
+    padding-left: 40%;
+    }
+
+input{
+		width:180px;
+		padding:3px 10px;
+		border-radius:3px;
+		background-color:#f6f6f6;
+		margin:8px 0;
+	}
+
+#subHeader1{
+		cursor:pointer;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		height:35px;
+		background-color: rgb(99, 223, 120);
+		justify-content: center;
+}
+
+#subHeader2{
+		cursor:pointer;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		height:35px;
+		background-color: rgb(73, 219, 97);
+		justify-content: center;
+	  }
+
+	  #subHeader3{
+		cursor:pointer;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		height:35px;
+		background-color: rgb(70, 197, 98);
+		justify-content: center;
+	  }
+
+	  #subHeader4{
+		cursor:pointer;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		height:35px;
+		background-color: rgb(36, 192, 77);
+		justify-content: center;
+	  }
+
+#form{
+	width:250px;
+	padding:16px;
+	border-radius:10px;
+	background-color:rgb(194, 235, 196);
+}
+
+#fotoGame{
+    height:150px;
+    width: 150px;
+    background-color:rgb(194, 235, 196);
+	margin-bottom: 2%;
+	
+  }
+
+
+#form input{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
